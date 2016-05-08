@@ -1,0 +1,55 @@
+1-M triangulation de Delaunay
+
+2-on pose la matrice et on repère les segments passant en dehors de la limite
+régionale 3 (10-17, 10-1 et 17-18)
+
+3-Refaire la M triangulation sous matlab (dont x segments ont été retirés)
+ce qui permet d'éclaircir le dessin
+
+4-on pose les points d'équilibre 40 pe moins les 3 pe des segments retirés
+
+5-on effectue les voisins relatifs sur les 37 couples de pe restant, 
+attention le logiciel renumérote les pe en fonction de l'ordre d'entree
+de 1 à 37
+
+5bis- on retire les pi trop excentrés en dehors de la zone regionale afin 
+de centrer le dessin, mais on se sert de ces couples pour fermer les polygones sur 
+les limites regionales
+inter 
+16-1
+13-18
+2-34
+2-33
+
+et les pi excentrés obtenus par des PE de pole differents
+on ne se sert pas de ces couples pour former et/ou fermer les polygones
+i36-i14
+
+6-si pe est le plus proche d'une limite regionale on ferme la droite par sa perpendiculaire
+sinon
+p9-27, on ferme avec p9
+p15-19, on ferme avec p15
+p28-26, on ferme avec p28
+
+
+7- fermer les poles non encore fermés 
+reperer les poles non fermés
+regarder les pe les plus proches afin de fermer le polygone
+P20 et P21---calcul pi
+P22 et P28---calcul pi
+
+
+8- pour bien délimiter les poles
+regarder les poles un à un
+supprimer inter 8-10
+
+
+
+dessin2bis bis
+
+6-on superpose les limites ss et on ne retient les pi (point d'intersection) dont les
+pe relèvent du meme secteur sanitaire
+dans un premier temps
+
+7- les droites terminales pourront recouper les limites des ss n'apartenant 
+pas à son pe d'origine 
